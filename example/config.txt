@@ -1,0 +1,2 @@
+Prefix plugins/VariableFeaturePlot/example/
+Plugin VariableFeaturePlot inputfile parameters.vfp.txt outputfile VarFeat.pdf
