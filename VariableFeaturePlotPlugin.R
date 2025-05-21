@@ -22,6 +22,8 @@ output <- function(outputfile) {
     pbmc <- readRDS(paste(pfix, parameters["rdsfile", 2], sep="/"))
 	plot1 <- VariableFeaturePlot(pbmc)
 topX <- readRDS(paste(pfix, parameters["topX", 2], sep="/"))
+#print(str(topX))
+write.csv(topX, paste(outputfile, "csv", sep="."))
 LabelPoints(plot = plot1, points = topX, repel = TRUE)
 }
 
